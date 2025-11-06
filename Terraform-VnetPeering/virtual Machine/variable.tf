@@ -61,6 +61,6 @@ variable "admin_username" {
 
 variable "admin_password" {
   type    = string
-  default = "Abhisam@12345"
+  default = "Abhisam@123456"
 
 }
