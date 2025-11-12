@@ -13,7 +13,7 @@ terraform {
 provider "azurerm" {
   resource_provider_registrations = "none"
   features {}
-  subscription_id = "7e9cd62d-d9f6-4bcd-885a-e03b46c8596c"
+  
 }
 # Azure Terraform Backend
 terraform {
