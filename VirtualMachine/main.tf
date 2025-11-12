@@ -121,7 +121,7 @@ resource "azurerm_network_interface" "nic" {
 }
 #create a vm
 resource "azurerm_windows_virtual_machine" "vm" {
-  name                = var.vitual_machine_name
+  name                = var.virtual_machine_name
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = var.virtual_machine_size

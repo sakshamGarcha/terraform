@@ -46,7 +46,7 @@ variable "network_interface_name" {
   type    = string
   default = "terraform-nic"
 }
-variable "vitual_machine_name" {
+variable "virtual_machine_name" {
   type    = string
   default = "terraform-vm"
 }
