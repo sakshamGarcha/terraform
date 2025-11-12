@@ -4,14 +4,14 @@ variable "resource_group_name" {
 }
 variable "location" {
   type    = string
-  default = "UkSouth"
+  default = "CentralIndia"
 }
 variable "tags" {
   type = map(string)
   default = {
     owner   = "saksham"
     project = "Terraform"
-    region  = "UkSouth"
+    region  = "CentralIndia"
   }
 }
 variable "storage_account_name" {
