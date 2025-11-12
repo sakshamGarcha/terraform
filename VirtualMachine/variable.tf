@@ -31,8 +31,8 @@ variable "vnet_address" {
   default = ["10.0.0.0/24"]
 }
 variable "subnet_name" {
-  type        = string
-  default = "terraform-snet" 
+  type    = string
+  default = "terraform-snet"
 }
 variable "subnet_address" {
   type    = list(string)

@@ -13,7 +13,7 @@ terraform {
 provider "azurerm" {
   resource_provider_registrations = "none"
   features {}
-  
+
 }
 # Azure Terraform Backend
 terraform {
