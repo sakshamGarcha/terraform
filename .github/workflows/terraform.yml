@@ -45,8 +45,14 @@ jobs:
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
-      run: terraform init
       working-directory: ./VirtualMachine
+      run: |
+          terraform init \
+            -backend-config="resource_group_name=terraform-storage-rg" \
+            -backend-config="storage_account_name=saksham914" \
+            -backend-config="container_name="tfstate" \
+            -backend-config="key="virtualmachine.terraform.tfstate" \
+      
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
