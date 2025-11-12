@@ -11,7 +11,7 @@ variable "tags" {
   default = {
     owner   = "saksham"
     project = "Terraform"
-    region  = "EastUs"
+    region  = "WestUk"
   }
 }
 variable "storage_account_name" {
