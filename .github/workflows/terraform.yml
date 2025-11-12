@@ -58,7 +58,7 @@ jobs:
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
       working-directory:  ./VirtualMachine
-      run: terraform fmt -check -resursive
+      run: terraform fmt -check -recursive
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
